@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="add-employee">
+        <button onclick="togglePopup()">Add Employee</button>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Company Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!-- <tr>
+                <td>1</td>
+                <td>Megha</td>
+                <td>Web Developer</td>
+                <td>20000</td>
+                <td>8168865798</td>
+                <td>meghacute786@gmail.com</td>
+                <td>sisfy lmd sol</td>
+            </tr> -->
+        </tbody>
+    </table>
+    <div class="popup" style="display:none;">
+        <form class="popup-body" id="form">
+            <span class="close" onclick="togglePopup()">&times;</span>
+            <input type="text" name="name" placeholder="Employee Name" required>
+            <select name="role" id="" required>
+                <option value="IOS developer">IOS developer</option>
+                <option value="Web developer">Web developer</option>
+                <option value="Software developer">Software developer</option>
+            </select>
+            <input type="number"name="salary" placeholder="Salary" required>
+            <input type="text" name="phoneNumber" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="companyName" placeholder="Company Name" required>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
